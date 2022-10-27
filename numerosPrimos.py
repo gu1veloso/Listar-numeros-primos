@@ -1,7 +1,6 @@
-import timeit
+import time
 
-tempo_inicial=timeit.default_timer() # em segundos
-
+tempo_inicial = time.time()
 mult = 0
 lista = []
 
@@ -17,7 +16,8 @@ for n in range(2, 100):
     else:
         mult = 0
 
-tempo_final=timeit.default_timer() # em segundos
+time.sleep(1)
+tempo_final = time.time()
 print(f"{tempo_final - tempo_inicial} segundos")
 
 
